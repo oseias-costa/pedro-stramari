@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+html{
+
+    scroll-behavior: smooth;
+}
+
+
+:root{
+    --cor-azul: #003151;
+    --cor-cinza-first: #585959;
+    --cor-cinza-terc: #929292;
+    --cor-cinza-second: #D6D6D6;
+    --cor-cinza-4: #e4e4e4;
+    --cor-cinza-5: #c2c2c2;
+
+    --font-titulo: 'Vidaloka', serif;
+    --font-principal:'Inter', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.font-principal{
+    font-family: var(--font-principal);
+    font-display: swap;
+    margin-bottom: 25px;
+}
+
+.font-titulo{
+    font-family: var(--font-titulo);
+    font-display: swap;
+}
+
+header{
+    height: 8em;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-image: url(../img/inicio__fundo.webp);
+    background-size: cover;
+    height: 100vh;
+}
+
+header > img{
+    margin-top: 50px;
+    max-width: 25em;
+    max-height: 64px;
+    width: 100%;
+    height: 100%;
+    min-width: 300px;
+}
+
+.obrigado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.obrigado__bloco{
+    padding: 20px;
+    width: 500px;
+    background-color: #e4e4e4;
+    border: 1px solid #003151;
+    height: 300px;
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: var(--cor-cinza-first);
+    position: relative;
+    text-transform: uppercase;
+}
+
+.obrigado__bloco > a{
+    padding: 0.6em 1em 0.6em 1em;
+    border-radius: 0.3em;
+    border: 0;
+    color: #fff;
+    background: rgba(0,49,81,0.7);
+    font-weight: 600;
+    font-family: Inter, sans-serif;
+    font-size: 0.9em;
+    border: 1px solid #fff;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    top: 1.6em;
+    margin-bottom: 50px;
+}
+
+.obrigado__bloco > a:hover{
+    color: var(--cor-azul);
+    border: 1px solid var(--cor-azul);
+    background: rgba(255,255,255,0.3);
+}
+
+@media (max-width: 551px){
+    .obrigado__bloco{
+    width: 80%;
+    height: auto;
+    }
+
+    h2{
+        font-size: 1.5em;
+    }
+}
